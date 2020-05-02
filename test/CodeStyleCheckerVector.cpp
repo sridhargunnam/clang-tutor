@@ -1,4 +1,4 @@
-// RUN: clang++ -Xclang -load -Xclang %shlibdir/libHelloWorld%shlibext -Xclang -plugin -Xclang hello-world -c %s 2>&1 | FileCheck %s
+// RUN: clang++ -Xclang -load -Xclang %shlibdir/libCodeStyleChecker%shlibext -Xclang -plugin -Xclang code-style-checker -c %s
 
 #include <vector>
 
@@ -8,6 +8,3 @@
 //
 // Instead, this test makes sure that this translation unit is processed
 // successfully (i.e. the plugin does not crash).
-
-// CHECK-NOT: (clang-tutor)  no declarations found
-// CHECK: (clang-tutor)
