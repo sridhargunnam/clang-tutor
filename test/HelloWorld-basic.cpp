@@ -13,8 +13,5 @@ union Bez {
   float l;
 };
 
-class Foo1 {
-    int i;
-};
 // CHECK: (clang-tutor) file: {{.*}}/clang-tutor/test/HelloWorld-basic.cpp
 // CHECK-NEXT: (clang-tutor)  count: 3
